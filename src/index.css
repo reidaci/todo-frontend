@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+@layer base {
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  
+  html body[data-scroll-locked] {
+    margin-right: 0 !important;
+  }
+
+  :root {
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    body {
+      background-color: rgb(2 6 23); 
+      color: rgb(203 213 225); 
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+      color: inherit; 
+    }
+  }
+}
